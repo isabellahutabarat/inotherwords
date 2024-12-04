@@ -44,28 +44,28 @@ const phrases = [
   { text: "उसले अलमलमा सोध्यो", language: "NEPALI" },
   { text: "JE ZMEDENO VPRAŠAL", language: "SLOVENE" },
   { text: "उसने भ्रमित होकर पूछा", language: "HINDI" },
-  { text: "D'IARR SÉ AR DHAOINE EATARTHU", language: "IRISH" },
-  { text: "DIA BERTANYA BINGUNG", language: "INDONESIAN" },
+  { text: "D'IARR SÉ AR \nDHAOINE EATARTHU", language: "IRISH" },
+  { text: "DIA BERTANYA \nBINGUNG", language: "INDONESIAN" },
   { text: "SPÝTAL SA ZMÄTENE", language: "SLOVAK" },
-  { text: "ELE PERGUNTOU CONFUSO", language: "PORTUGUESE" },
+  { text: "ELE PERGUNTOU\n CONFUSO", language: "PORTUGUESE" },
   { text: "HE ASKED CONFUSED", language: "ENGLISH" },
   { text: "त्याने गोंधळून विचारले", language: "MARATHI" },
   { text: "CHIESE CONFUSO", language: "ITALIAN" },
   { text: "TANYANYA KELIRU", language: "MALAY" },
-  { text: "- СПРОСИЛ ОН В ЗАМЕШАТЕЛЬСТВЕ", language: "RUSSIAN" },
-  { text: "HOY IZY NANONTANY TAMIN'NY FISAVORITAHANA", language: "MALAGASY" },
-  { text: "LI MANDE NAN KONFIZYON", language: "HAITIAN" },
+  { text: "- СПРОСИЛ ОН В \nЗАМЕШАТЕЛЬСТВЕ", language: "RUSSIAN" },
+  { text: "HOY IZY NANONTANY \nTAMIN'NY FISAVORITAHANA", language: "MALAGASY" },
+  { text: "LI MANDE NAN\n KONFIZYON", language: "HAITIAN" },
   { text: "குழப்பத்துடன் கேட்டார்", language: "TAMIL" },
   { text: "ՀԱՐՑՐԵՑ ՇՓՈԹՎԱԾ", language: "ARMENIAN" },
   { text: "D'IARR MEARBHALL", language: "IRISH" },
-  { text: "ആശയക്കുഴപ്പത്തോടെ ചോദിച്ചു", language: "MALAYALAM" },
+  { text: "ആശയക്കുഴപ്പത്തോടെ\n ചോദിച്ചു", language: "MALAYALAM" },
   { text: "HA BOTSA A FEREKANE", language: "SOUTHERN SOTHO" },
   { text: "LI MANDE KONFONN", language: "HAITIAN" },
   { text: "UPITAO JE ZBUNJENO", language: "BOSNIAN" },
   { text: "TANYANYA KELIRU", language: "MALAY" },
-  { text: "HIE GEFROT DUERCHERNEEN", language: "LUXEMBOURGISH" },
+  { text: "HIE GEFROT\n DUERCHERNEEN", language: "LUXEMBOURGISH" },
   { text: "PYETI AI I HUTUAR", language: "ALBANIAN" },
-  { text: "AKABVUNZA ACHIVHIRINGIKA", language: "SHONA" },
+  { text: "AKABVUNZA \nACHIVHIRINGIKA", language: "SHONA" },
   { text: "هن پريشان ٿي پڇيو", language: "SINDHI" },
   { text: "ఆందోళనగా అడిగాడు", language: "TELUGU" },
   { text: "HE ASKED WORRIEDLY", language: "ENGLISH" },
@@ -120,8 +120,8 @@ const phrases = [
 
 // Font settings
 const fontFamily = "TT Commons Pro, sans-serif";
-const fontSize = 120;
-const typingSpeed = 50; // Speed of typing in milliseconds
+const fontSize = 100;
+const typingSpeed = 20; // Speed of typing in milliseconds
 const backgroundOpacity = 0.5; // Slightly reduced opacity for better readability of the main text
 
 // Track current phrase and typed characters
@@ -129,6 +129,7 @@ let currentPhraseIndex = 0;
 let currentTypedText = "";
 let isTyping = false;
 let typingInterval = null; // Store the current typing interval
+
 
 // Floating phrases
 const floatingPhrases = [];
