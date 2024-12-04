@@ -1,0 +1,51 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    position: relative;
+    margin: 0;
+  }
+  
+  /* Background image container */
+  #background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/blur2.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    z-index: -1; /* Ensure the image stays behind the text */
+  }
+  
+  /* Canvas settings */
+  #textCanvas {
+    width: 100%;
+    height: 100%;
+    display: block; /* Remove unwanted space under the canvas */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Text will be on top */
+  }
+  
+  /* Language Info Styling */
+  .language-info {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Position to the right */
+    font-size: 20px; /* Smaller font size */
+    font-weight: bold; /* Bold font weight */
+    color: #000000; /* Black color */
+    font-family: 'TT Commons Pro', sans-serif;
+    z-index: 2; /* Make sure it's above the canvas */
+  }
+  
